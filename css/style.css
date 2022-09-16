@@ -1,0 +1,559 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Geral*/
+body {
+    font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+
+    overflow-x: hidden;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    font-weight: 100;
+}
+h2 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+h3 {
+    padding-top: 5px;
+    font-weight: 100;
+}
+h4 {
+    padding-top: 5px;
+    font-weight: 100;
+}
+p {
+    color: rgba(128, 128, 128, 0.897);
+    line-height: 20px;
+    text-align: justify;
+}
+abbr {
+    text-decoration: none;
+}
+
+/*Cabeçalho*/
+header {
+    width: 100%;
+    position: fixed;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    
+    justify-content: space-around;
+    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    
+    padding: 10px 20px;
+
+    background: rgba(54, 231, 255, 0.1);
+    border-bottom: 2px solid rgb(0, 132, 150);
+
+    z-index: 10;
+}
+
+/*Navegação*/
+nav a:link, a:visited {
+    border-bottom: 1px solid rgba(54, 231, 255, 0);
+}
+nav a:hover {
+    border-bottom: 1px solid white;
+}
+
+/*ícone hamburguer*/
+#btn-mobile {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+nav ul li {
+    color: white;
+    padding: 10px 15px;
+}
+
+/*Seções*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    /*Espaçamento das seções*/
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+.divisor {
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 400px;
+    text-indent: -3000px;
+
+    background: url(../img/icon-seta.png) no-repeat center; 
+}
+
+/*Classes para alterar ordem*/
+.ordenar-1 {
+    order: 1;
+}
+.ordenar-2 {
+    order: 2;
+}
+.ordenar-3 {
+    order: 3;
+}
+
+/*Seção Inicial*/
+section#inicio p.texto-apresentacao {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+/*Texto Michael*/
+section#inicio strong {
+    font-size: 2em;
+    font-weight: 100;
+    color: rgb(54, 231, 255);
+}
+
+/*Texto de Apresentação*/
+section#inicio span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Area de botões do site*/
+.area-botoes {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Botões do site*/
+.area-botoes a {
+    border: 2px solid;
+    border-radius: 10px;
+    
+    padding: 8px 10px;
+    margin-right: 20px;
+}
+.area-botoes a:hover{
+    background-color: rgba(54, 231, 255, 0.1)
+}
+
+/*Para o texto ficar branco*/
+div.forcar-branco {
+    display: inline;
+    color: white !important;
+}
+
+/*Botão do Linkedin*/
+a.linkedin {
+    border-color: rgb(9, 97, 184);
+}
+
+/*Efeito de cor no logotipo*/
+a.linkedin:hover {
+    color: rgb(9, 97, 184);
+}
+
+/*Botão do Github*/
+a.github {
+    border-color: rgb(49, 0, 105);
+}
+
+/*Efeito de cor no logotipo*/
+a.github:hover {
+    color: rgb(49, 0, 105);
+}
+
+/*Imagem destaque*/
+img.foto-programador {
+    border-right: 10px solid rgb(0, 132, 150);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+/*Seção Sobre*/
+section#sobre article.primario {
+    width: 50%;
+    min-width: 400px;
+}
+section#sobre article.secundario {
+    width: 30%;
+    min-width: 400px;
+    text-align: center;
+}
+
+/*Area de botões*/
+section#sobre .area-botoes {
+    text-align: left;
+
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+/*Imagem de perfil*/
+img.foto-perfil {
+    width: 90%;
+
+    -webkit-box-shadow: 2px 3px 8px rgba(54, 231, 255, 0.1);
+    box-shadow: 2px 3px 8px rgba(54, 231, 255, 0.1);
+
+    border-left: 5px solid rgba(54, 231, 255, 0.1);
+    opacity: 0.6;
+}
+
+/*Efeito na imagem de perfil*/
+img.foto-perfil:hover {
+    -webkit-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+
+    border-left: 5px solid rgb(0, 132, 150);
+    opacity: 0.9;
+}
+
+/*Botão para baixar currículo*/
+a.botao-cv {
+    border-color: rgb(0, 132, 150);
+}
+
+/*Efeito de cor no logotipo*/
+a.botao-cv:hover {
+    color: rgb(0, 132, 150);
+}
+
+
+/*Seção Projetos*/
+section#projetos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack:first baseline;
+    -ms-flex-pack:first baseline;
+    justify-content: space-around;
+
+    padding-bottom: 50px;
+}
+
+/*Blocos de projetos*/
+section#projetos article {
+    background: rgba(92, 92, 92, 0.4);
+    -webkit-box-shadow: 2px 3px 10px rgba(54, 231, 255, 0.1);
+    box-shadow: 2px 3px 10px rgba(54, 231, 255, 0.1);
+
+    width: 45%;
+    min-width: 400px;
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section#projetos article a {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+section#projetos article a:hover {
+    text-decoration: underline;
+}
+
+/*Parágrafos dos blocos de projetos*/
+section#projetos article p {
+    width: 80%;
+    margin: 0 auto;
+    text-align-last: center;
+}
+
+/*Imagem dos blocos de projetos*/
+section#projetos article img {
+    border-radius: 50px;
+
+    width: 90%;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+article.em-breve a {
+    color: rgb(185, 0, 0);
+    cursor: default;
+}
+article.em-breve span {
+    color: rgb(185, 0, 0);
+    font-size: 0.7em;
+    text-transform: uppercase;
+
+    display: block;
+}
+
+/*Efeito de salto da imagem*/
+img.zoom {
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+img.zoom:hover {
+    -webkit-transform: scale(1.1);    
+    -ms-transform: scale(1.1);    
+    transform: scale(1.1);
+}
+
+/*Rodape*/
+footer {
+    background: url(../img/fundo-rodape.png) no-repeat top center;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/*Telas que tenham até 575.98px*/
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 1.3em;
+    }
+
+    /*Botão mobile*/
+    #btn-mobile {
+        display: block;
+        cursor: pointer;
+
+        border: none;
+        background: none;
+    }
+
+    /*Efeito menu*/
+    ul#menu {
+        display: none;
+
+        /*Ficar por cima dos elementos*/
+        position: absolute;
+        width: 100%;
+
+        background: rgba(54, 231, 255, 0.7);
+
+        /*Afastar do cabeçalho*/
+        top: 45px;
+        left: 0px;
+        
+        z-index: 1000;
+
+        overflow-y: hidden;
+    }
+
+    /*Quando nav estiver ativa*/
+    #nav.active #menu {
+        display: block;
+        overflow-y: auto;
+    }    
+
+    /*Quando nav estiver ativa*/
+    #nav.active ul#menu li {
+        text-align: center;
+        border-bottom: 1px solid rgba(54, 231, 255, 0.1);
+    }
+
+    /*A ultima li*/
+    #nav.active ul#menu li.ultima {
+        border-bottom: 2px solid rgb(0, 132, 150);
+    }
+
+    /*Efeito ao passar o mouse na li*/
+    #nav.active ul#menu li:hover {
+        background: rgba(54, 231, 255, 0.1);
+    }
+
+    /*Tirando efeito do link ao passar o mouse*/
+    #nav.active ul#menu li a:hover {
+        border: none;
+    }
+
+    /*Ícone Hamburguer*/
+    #hamburger {
+        /*Linha para hamburger*/
+        border-top: 2px solid;
+        width: 20px;
+        color: white;
+
+        display: block;
+    }
+
+    /*Pseudo elementos*/
+    #hamburger::after, #hamburger::before {
+        /*Para o conteudo existir*/
+        content: '';
+        
+        
+        /*Linha para hamburger*/
+        display: block;
+        width: 20px;
+        margin-top: 5px;
+        height: 2px;
+
+        /*Asssume a cor do elemento hamburger*/
+        background: currentColor;
+        
+        transition: 0.3s;
+
+        /*Para o traço ser posicionado mais acima*/
+        position: relative;
+    }
+
+    /*Tirar um dos traços*/
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    
+    /*Rotacionar traço*/
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    /*Rotacionar traço*/
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        
+        /*Posicionar mais acima*/
+        top: -7px;
+    }
+    /*
+
+    #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    
+ */
+    
+    /*Alinhamento Texto Principal*/
+    section#inicio {
+        padding-top: 60px;
+        justify-content: center;
+    }
+    section#inicio p.texto-apresentacao {
+        text-align: center;
+
+        font-size: 1.2em;
+    }
+
+    /*Ocultar imagem capa*/
+    img.foto-programador {
+        display: none;
+    }
+    
+    /*Alterar tamanho dos botões*/
+    .area-botoes a {
+        font-size: 0.8em;
+    }
+
+    /*Ocultar divisor*/
+    .divisor {
+        display: none;
+    }
+
+    /*Tamanho do parágrafo*/
+    section#sobre article.primario {
+        min-width: 300px;
+    }
+
+    /*Bloco de projetos*/
+    section#projetos article {
+        min-width: 360px;
+    }
+}
+
+/*Telas que tenham de 576px até 767.98px*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 1.7em;
+    }
+    
+    /*Alinhamento Texto Principal*/
+    section#inicio p.texto-apresentacao {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    /*Seção Sobre*/
+    section#sobre article.primario {
+        width: 560px;
+    }
+}
+
+/*Telas que tenham de 766px até 991.98px*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /*Alinhamento Texto Principal*/
+    section#inicio p.texto-apresentacao {
+        text-align: center;
+    }
+
+    /*Tamanhos blocos de projetos*/
+    section#projetos article {
+        /* background: rgba(102, 0, 0, 0.4); */
+        width: 80%;    
+    }
+}
+
+/*Telas que tenham de 992px até 1199.98px*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    article.em-breve span {
+        display: inline;
+    }
+}
+
+/*Telas que tenham de 1200px pra cima*/
+@media (min-width: 1200px) {
+    header {
+        justify-content: space-between;
+    }
+
+    /*Espaçaento da seção inicio*/
+    section#inicio {
+        padding-top: 10%;
+    }
+
+    nav ul {
+        margin-right: 150px;
+    }
+
+    article.em-breve span {
+        display: inline;
+    }
+}
